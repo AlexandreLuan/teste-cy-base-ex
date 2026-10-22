@@ -1,42 +1,50 @@
-# Projeto Base - Cypress
+# 📚 Hub de Leitura - Automação de Testes com Cypress
 
-Este é um projeto base para testes automatizados utilizando o **Cypress**.
+Projeto desenvolvido como parte do módulo de testes avançados em **Cypress** da [EBAC](https://ebaconline.com.br/). O objetivo é aplicar automação End-to-End (E2E) utilizando boas práticas, comandos customizados, interceptação de requisições de API (`cy.intercept`) e AppActions.
+
+## 🛠️ Tecnologias Utilizadas
+
+- [Cypress](https://www.cypress.io/) (v16)
+- JavaScript
+- Node.js
 
 ## 🧩 Pré-requisitos
 
-Antes de começar, certifique-se de ter instalado:
+Antes de começar, certifique-se de ter instalado em sua máquina:
 
-- [Node.js](https://nodejs.org/) (recomenda-se a versão **LTS**)
+- [Node.js](https://nodejs.org/) (versão LTS recomendada)
 - [Git](https://git-scm.com/)
 
 ## 🚀 Passos para rodar o projeto
 
 ### 1. Clonar o repositório
-
+*(Lembre-se de substituir pelo link do seu próprio repositório)*
 ```bash
-git clone https://github.com/EBAC-QE/teste-cy-base.git
-```
+git clone [https://github.com/SEU-USUARIO/nome-do-seu-repositorio.git](https://github.com/SEU-USUARIO/nome-do-seu-repositorio.git)
 
-### 2. Entrar na pasta do projeto
+##2. Entrar na pasta do projeto
+Bash
+cd nome-do-seu-repositorio
 
-```bash
-cd teste-cy-base
-```
-
-### 3. Instalar as dependências
-
-```bash
+##3. Instalar as dependências
+Bash
 npm install
-```
 
-### 4. Rodar o Cypress (modo interativo)
-
-```bash
+##4. Rodar o Cypress (modo interativo)
+Bash
 npx cypress open
-```
 
-### 5. Rodar os testes (modo headless)
-
-```bash
+##5. Rodar os testes (modo headless / terminal)
+Bash
 npx cypress run
-```
+
+🧪 Funcionalidades testadas:
+Testes de Login (cenários positivos e negativos).
+
+Uso de Comandos Customizados para otimização dos fluxos.
+
+Mockagem de requisições utilizando cy.intercept() (cenários positivos e simulação de erros de servidor/cliente).
+
+Validação com fixtures e manipulação de dados.
+
+Feito com 💻 por Alexandre Luan dos Santos
