@@ -9,16 +9,16 @@ describe('Funcionalidade: Administrar Reservas de livros', () => {
     it('Deve exibir as reservas via intercept', () => {
         cy.fixture('reservas').then((dadosReserva) =>{
             cy.intercept('GET', 'api/reservations', {
-            statusCode: 200,
-            body: dadosReserva
-        }).as('listarReservas')
+                statusCode: 200,
+                body: dadosReserva
+            }).as('listarReservas')
 
-        cy.visit('dashboard.html')
-        cy.wait('@listarReservas')
+            cy.visit('dashboard.html')
+            cy.wait('@listarReservas')
 
+            cy.contains('Novo livro fixture').should('be.visible')
+            cy.contains('Novo livro com boas práticas').should('be.visible')
         })
-        
-        
     });
 
 });
